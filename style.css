@@ -36,8 +36,8 @@ main {
 }
 @media (max-width: 768px) {
     main {
-        height: 100%;
         border-radius: 0;
+        padding: 20px;
     }
 }
 
@@ -46,17 +46,97 @@ main {
     display: flex;
     justify-content: flex-start;
     width: 100%;
+    margin-bottom: 15px;
 }
 .notifications-title {
     margin: 0px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.notifications-number {
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    background-color: hsl(219, 85%, 26%);
+    width: 32px;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 10px;
+    padding: 1px 0px 1px 0px;
 }
 .notifications-read {
     margin-left: auto;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Jakarta',sans-serif;
+    color: hsl(219, 12%, 42%);
+}
+
+/* Card Styling */
+.notification-card {
+    display: flex;
+    margin: 10px 0 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+.notification-card :is(.name, .group, .notification-text, .notification-timestamp, .notification-message) {
+    font-size: 14px;
+    font-family: 'Jakarta',sans-serif;
+}
+.notification-image-section {
+    margin-right: 15px;
+}
+.notification-image {
+    width: 40px;
+}
+.notification-text {
+    margin: 0px;
+    color: hsl(219, 12%, 42%);
+    font-weight: 500;
+}
+.notification-message {
+    color: hsl(219, 12%, 42%);
+    font-weight: 500;
+    border: 1px solid hsl(205, 33%, 90%);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+.name {
+    font-weight: 800;
+    margin-right: 5px;
+    color: hsl(224, 21%, 14%);
+}
+.group, .post {
+    font-weight: 800;
+    margin-left: 5px;
+}
+.notification-timestamp {
+    color: hsl(219, 14%, 63%);
+    font-weight: 500;
+}
+
+/* Unread Card Styling */
+.notification-card.unread {
+    background-color: #f7fafd;
+}
+.notification-card.unread .notification-text-dot {
+    height: 7px;
+    width: 7px;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 1px;
+    box-shadow: 0 0 1px hsl(1, 90%, 64%);
 }
 
 /* Footer Styling */
 footer {
-
+    font-family: 'Jakarta',sans-serif;
 }
 .attribution {
     font-size: 11px; text-align: center;
