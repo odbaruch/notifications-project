@@ -1,0 +1,61 @@
+/* Font */
+@font-face {
+    font-family: 'Jakarta';
+    src: url('./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  }
+
+/* Page Styling */
+html {
+    background-color: #f9fafe;
+    height: calc(100vh - 16px);
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 1fr max-content 1fr;
+    height: 100%;
+}
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 0;
+    }
+}
+
+/* Main Styling */
+main {
+    background-color: #fff;
+    border-radius: 15px;
+    font-family: 'Jakarta',sans-serif;
+    grid-area: 2 / 2;
+    align-self: center;
+    max-width: 735px;
+    width: 100%;
+    box-shadow: 0px 0px 35px 0px #F0F0F0;
+}
+@media (max-width: 768px) {
+    main {
+        grid-area: 1 / 1;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+/* Header Styling*/
+
+/* Footer Styling */
+footer {
+    grid-area: 3 / 2;
+}
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media (max-width: 768px) {
+    footer {
+        grid-area: 2 / 1;
+    }
+}

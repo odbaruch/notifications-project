@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Notifications page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <header class="notifications-heading">
-    <h1 class="notifications-title">
-      Notifications
-    </h1>
-    <div class="notifications-number">
-      3
-    </div>
-    <button class="notifications-read" type="button">
-      Mark all as read
-    </button>
-  </header>
-  <section class="notifications">
-    <div class="notification-card">
-      Mark Webber reacted to your recent post My first tournament today!
-      <time class="notification-timestamp">1m ago</time>
-    </div>
-    <div class="notification-card">
-      Angela Gray followed you
-      <time class="notification-timestamp">5m ago</time>
-    </div>
-    <div class="notification-card">
-      Jacob Thompson has joined your group Chess Club
-      <time class="notification-timestamp">1 day ago</time>
-    </div>
-    <div class="notification-card">
-      Rizky Hasanuddin sent you a private message
-      <time class="notification-timestamp">5 days ago</time>
-      Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-      I'm already having lots of fun and improving my game.
-    </div>
-    <div class="notification-card">
-      Kimberly Smith commented on your picture
-      <time class="notification-timestamp">1 week ago</time>
-    </div>
-    <div class="notification-card">
-      Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-      <time class="notification-timestamp">2 weeks ago</time>
-    </div>
-    <div class="notification-card">
-      Anna Kim left the group Chess Club
-      <time class="notification-timestamp">2 weeks ago</time>
-    </div>
-  </section>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Omer Baruch</a>.
-  </div>
-</body>
+  <head>
+    <title>Frontend Mentor | Notifications page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="style.css"
+  </head>
+  <body>
+    <main>
+      <div class="notifications-heading">
+        <h1 class="notifications-title">
+          Notifications
+        </h1>
+        <div class="notifications-number">
+          3
+        </div>
+        <button class="notifications-read" type="button">
+          Mark all as read
+        </button>
+      </div>
+      <div class="notifications">
+        <div class="notification-card">
+          <p class="notification-text">
+            <a class="name">Mark Webber</a> reacted to your recent post <a class="post">My first tournament today!</a>
+          </p>
+          <time class="notification-timestamp">1m ago</time>
+        </div>
+        <div class="notification-card">
+          <p class="notification-text">  
+            <a class="name">Angela Gray</a> followed you
+          </p>
+          <time class="notification-timestamp">5m ago</time>
+        </div>
+        <div class="notification-card">
+          <p class="notification-text">  
+            <a class="name">Jacob Thompson</a> has joined your group <a class="group">Chess Club</a>
+          </p>
+          <time class="notification-timestamp">1 day ago</time>
+        </div>
+        <div class="notification-card">
+          <p class="notification-text">  
+            <a class="name">Rizky Hasanuddin</a> sent you a private message
+          </p>
+          <time class="notification-timestamp">5 days ago</time>
+          <p class="notification-message">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.
+          </p>
+        </div>
+        <div class="notification-card">
+          <p class="notification-text">  
+            <a class="name">Kimberly Smith</a> commented on your picture
+          </p>
+          <time class="notification-timestamp">1 week ago</time>
+        </div>
+        <div class="notification-card">
+          <p class="notification-text">  
+            <a class="name">Nathan Peterson</a> reacted to your recent post <a class="post">5 end-game strategies to increase your win rate</a>
+          </p>
+          <time class="notification-timestamp">2 weeks ago</time>
+        </div>
+        <div class="notification-card">
+          <p class="notification-text">  
+            <a class="name">Anna Kim</a> left the group <a class="group">Chess Club</a>
+          </p>
+          <time class="notification-timestamp">2 weeks ago</time>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Omer Baruch</a>.
+    </footer>
+  </body>
 </html>
