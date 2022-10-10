@@ -137,6 +137,7 @@ main {
 /* Footer Styling */
 footer {
     font-family: 'Jakarta',sans-serif;
+    flex-basis: 100%;
 }
 .attribution {
     font-size: 11px; text-align: center;
