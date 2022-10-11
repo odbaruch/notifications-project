@@ -35,7 +35,7 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
 
 - [Desktop View](assets/images/screenshot.png)
 - [Mobile View](assets/images/mobilescreenshot.png)
