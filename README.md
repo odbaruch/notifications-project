@@ -45,7 +45,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://github.com/odbaruch/notifications-project)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-notifications-page-using-css-flexbox-and-js-7U97VfDDss)
 - Live Site URL: [Live Site](https://notifications-project.vercel.app/)
 
 ## My process
