@@ -74,6 +74,7 @@ main {
     font-size: 16px;
     font-family: 'Jakarta',sans-serif;
     color: hsl(219, 12%, 42%);
+    cursor: pointer;
 }
 @media (max-width: 768px) {
     .notifications-title {
@@ -106,6 +107,9 @@ main {
     color: hsl(219, 12%, 42%);
     font-weight: 500;
 }
+.notification-message-link {
+    text-decoration: none;
+}
 .notification-message {
     color: hsl(219, 12%, 42%);
     font-weight: 500;
@@ -114,14 +118,16 @@ main {
     border-radius: 5px;
     margin-bottom: 0;
 }
-.name {
+.name, .group, .post {
+    text-decoration: none;
     font-weight: 800;
     margin-right: 5px;
+}
+.name {
     color: hsl(224, 21%, 14%);
 }
 .group, .post {
-    font-weight: 800;
-    margin-left: 5px;
+    color: hsl(219, 12%, 42%);
 }
 .notification-timestamp {
     color: hsl(219, 14%, 63%);
@@ -132,6 +138,8 @@ main {
 }
 .notification-image {
     width: 45px;
+    box-sizing: content-box;
+    border: 3px solid transparent;
 }
 @media (max-width: 768px) {
     .notification-card :is(.name, .group, .notification-text, .notification-timestamp, .notification-message) {
@@ -164,6 +172,10 @@ main {
 .notification-message:hover {
     background-color: hsl(211, 68%, 94%);
     border-color: hsl(211, 68%, 94%);
+}
+.notification-image-link:hover .notification-image {
+    border: 3px solid hsl(205, 33%, 90%);
+    border-radius: 10px;
 }
 
 /* Footer Styling */
