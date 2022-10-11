@@ -62,7 +62,9 @@ Users should be able to:
 #### HTML
 
 Semantic HTML concepts: I started out by using as many semantic elements as I could and then paring them down when they were unnecessary. For example, I originally had the heading wrapped in `<header>` tags and the body of the notifications wrapped in a `<section>`.  
+
 Upon further reading into the use of these tags, I concluded that they would be confusing to a screen reader as they separate the body of the notifications from their context which is provided by the heading.  
+
 I settled on wrapping the entire section in a `<main>` tag and separating out the heading and body using `<div>` tags:  
 ```
 <body>
@@ -137,6 +139,7 @@ notificationLinks[i].closest(".notification-card").classList.remove("unread");
 #### Git
 
 While I was already familiar with Git, I ran into an issue where I was being asked to input my personal access token for every push. This lead to my discovering [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).  
+
 As part of its configuration, I learned how to generate GPG keys and add them to my Github account, and how to configure Git to use custom credential stores.
 
 ### Continued development
