@@ -27,7 +27,7 @@ main {
     background-color: #fff;
     border-radius: 15px;
     font-family: 'Jakarta',sans-serif;
-    max-width: 735px;
+    max-width: 665px;
     width: 100%;
     box-shadow: 0px 0px 35px 0px #F0F0F0;
     display: flex;
@@ -50,7 +50,7 @@ main {
 }
 .notifications-title {
     margin: 0px;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 800;
 }
 .notifications-number {
@@ -70,9 +70,17 @@ main {
     background-color: transparent;
     padding: 0;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Jakarta',sans-serif;
     color: hsl(219, 12%, 42%);
+}
+@media (max-width: 768px) {
+    .notifications-title {
+        font-size: 20px;
+    }
+    .notifications-read {
+        font-size: 14px;
+    }
 }
 
 /* Card Styling */
@@ -83,7 +91,7 @@ main {
     border-radius: 10px;
 }
 .notification-card :is(.name, .group, .notification-text, .notification-timestamp, .notification-message) {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Jakarta',sans-serif;
 }
 .notification-image-section {
@@ -117,6 +125,11 @@ main {
 .notification-timestamp {
     color: hsl(219, 14%, 63%);
     font-weight: 500;
+}
+@media (max-width: 768px) {
+    .notification-card :is(.name, .group, .notification-text, .notification-timestamp, .notification-message) {
+        font-size: 14px;
+    }
 }
 
 /* Unread Card Styling */
