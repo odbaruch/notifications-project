@@ -156,6 +156,7 @@ main {
     width: 45px;
     box-sizing: content-box;
     border: 3px solid transparent;
+    transition: all 0.15s ease;
 }
 @media (max-width: 768px) {
     .notification-card :is(.name, .group, .notification-text, .notification-timestamp, .notification-message) {
