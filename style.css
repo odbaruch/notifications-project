@@ -44,6 +44,7 @@ main {
 /* Header Styling*/
 .notifications-heading {
     display: flex;
+    align-items: center;
     justify-content: flex-start;
     width: 100%;
     margin-bottom: 15px;
@@ -62,7 +63,7 @@ main {
     text-align: center;
     border-radius: 6px;
     margin-left: 10px;
-    padding: 1px 0px 1px 0px;
+    padding: 2px 0px 2px 0px;
 }
 .notifications-read {
     margin-left: auto;
@@ -143,7 +144,7 @@ main {
 
 /* Unread Card Styling */
 .notification-card.unread {
-    background-color: #f7fafd;
+    background-color: hsl(210, 60%, 98%);
 }
 .notification-card.unread .notification-text-dot {
     height: 7px;
@@ -156,6 +157,15 @@ main {
     box-shadow: 0 0 1px hsl(1, 90%, 64%);
 }
 
+/* Active States */
+.name:hover, .post:hover, .group:hover, .notifications-read:hover {
+    color: hsl(219, 85%, 26%);
+}
+.notification-message:hover {
+    background-color: hsl(211, 68%, 94%);
+    border-color: hsl(211, 68%, 94%);
+}
+
 /* Footer Styling */
 footer {
     font-family: 'Jakarta',sans-serif;
@@ -166,9 +176,4 @@ footer {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-@media (max-width: 768px) {
-    footer {
-
-    }
 }
