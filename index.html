@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="stylesheet" type="text/css" href="style.css"
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <main>
@@ -13,10 +13,10 @@
         <h1 class="notifications-title">
           Notifications
         </h1>
-        <div class="notifications-number">
+        <div class="notifications-number" id="notifications-number">
           3
         </div>
-        <button class="notifications-read" type="button">
+        <button class="notifications-read" type="button" onclick="clearNotifications()">
           Mark all as read
         </button>
       </div>
@@ -121,6 +121,7 @@
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Omer Baruch</a>.
+      <script src="scripts.js"></script>
     </footer>
   </body>
 </html>
