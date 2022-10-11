@@ -87,17 +87,17 @@ main {
 .notification-card {
     display: flex;
     margin: 10px 0 10px 0;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
 }
 .notification-card :is(.name, .group, .notification-text, .notification-timestamp, .notification-message) {
     font-size: 16px;
     font-family: 'Jakarta',sans-serif;
 }
-.notification-image-section {
+.profile-picture-section {
     margin-right: 15px;
 }
-.notification-image {
+.profile-picture {
     width: 40px;
 }
 .notification-text {
@@ -126,9 +126,18 @@ main {
     color: hsl(219, 14%, 63%);
     font-weight: 500;
 }
+.notification-image-section {
+    margin-left: auto;
+}
+.notification-image {
+    width: 45px;
+}
 @media (max-width: 768px) {
     .notification-card :is(.name, .group, .notification-text, .notification-timestamp, .notification-message) {
         font-size: 14px;
+    }
+    .notification-card {
+        padding: 15px;
     }
 }
 
