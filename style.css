@@ -76,6 +76,7 @@ main {
     font-family: 'Jakarta',sans-serif;
     color: hsl(219, 12%, 42%);
     cursor: pointer;
+    transition: color 0.15s ease;
 }
 @media (max-width: 768px) {
     .notifications-title {
@@ -129,11 +130,13 @@ main {
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 0;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 .name, .group, .post {
     text-decoration: none;
     font-weight: 800;
     margin-right: 5px;
+    transition: color 0.15s ease;
 }
 .name {
     color: hsl(224, 21%, 14%);
@@ -172,14 +175,14 @@ main {
 }
 
 /* Active States */
-.name:hover, .post:hover, .group:hover, .notifications-read:hover {
+.name:hover, .post:hover, .group:hover, .notifications-read:hover, .name:focus, .post:focus, .group:focus, .notifications-read:focus {
     color: hsl(219, 85%, 26%);
 }
-.notification-message:hover {
+.notification-message-link:hover .notification-message, .notification-message-link:focus .notification-message {
     background-color: hsl(211, 68%, 94%);
     border-color: hsl(211, 68%, 94%);
 }
-.notification-image-link:hover .notification-image {
+.notification-image-link:hover .notification-image, .notification-image-link:focus .notification-image {
     border: 3px solid hsl(205, 33%, 90%);
     border-radius: 10px;
 }
