@@ -37,11 +37,11 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop View](assets/images/screenshot.png)
-[Mobile View](assets/images/mobilescreenshot.png)
-[Desktop Design Spec](design/desktop-design.jpg)
-[Mobile Design Spec](design/mobile-design.jpg)
-[Active States Spec](design/active-states.jpg)
+- [Desktop View](assets/images/screenshot.png)
+- [Mobile View](assets/images/mobilescreenshot.png)
+- [Desktop Design Spec](design/desktop-design.jpg)
+- [Mobile Design Spec](design/mobile-design.jpg)
+- [Active States Spec](design/active-states.jpg)
 
 ### Links
 
