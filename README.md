@@ -37,16 +37,16 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View](assets/images/screenshot.png)
-![Mobile View](assets/images/mobilescreenshot.png)
-![Desktop Design Spec](design/desktop-design.jpg)
-![Mobile Design Spec](design/mobile-design.jpg)
-![Active States Spec](design/active-states.jpg)
+[Desktop View](assets/images/screenshot.png)
+[Mobile View](assets/images/mobilescreenshot.png)
+[Desktop Design Spec](design/desktop-design.jpg)
+[Mobile Design Spec](design/mobile-design.jpg)
+[Active States Spec](design/active-states.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/odbaruch/notifications-project)
-- Live Site URL: [Add live site URL here](https://notifications-project.vercel.app/)
+- Solution URL: [Frontend Mentor Solution](https://github.com/odbaruch/notifications-project)
+- Live Site URL: [Live Site](https://notifications-project.vercel.app/)
 
 ## My process
 
